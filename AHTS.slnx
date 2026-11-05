@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AHTS.BLL/AHTS.BLL.csproj" />
+  <Project Path="AHTS.DAL/AHTS.DAL.csproj" />
+  <Project Path="AHTS.Core\AHTS.Core.csproj" />
+  <Project Path="AHTS.WEB\AHTS.WEB.csproj" />
+</Solution>

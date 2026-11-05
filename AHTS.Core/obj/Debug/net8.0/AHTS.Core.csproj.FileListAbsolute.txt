@@ -1,0 +1,11 @@
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/bin/Debug/net8.0/AHTS.Core.deps.json
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/bin/Debug/net8.0/AHTS.Core.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/bin/Debug/net8.0/AHTS.Core.pdb
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.AssemblyInfoInputs.cache
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.AssemblyInfo.cs
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.csproj.CoreCompileInputs.cache
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/refint/AHTS.Core.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.pdb
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/ref/AHTS.Core.dll

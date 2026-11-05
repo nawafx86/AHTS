@@ -1,0 +1,17 @@
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/bin/Debug/net8.0/AHTS.DAL.deps.json
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/bin/Debug/net8.0/AHTS.DAL.runtimeconfig.json
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/bin/Debug/net8.0/AHTS.DAL.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/bin/Debug/net8.0/AHTS.DAL.pdb
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/bin/Debug/net8.0/AHTS.Core.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/bin/Debug/net8.0/AHTS.Core.pdb
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.csproj.AssemblyReference.cache
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.AssemblyInfoInputs.cache
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.AssemblyInfo.cs
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.csproj.CoreCompileInputs.cache
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.csproj.Up2Date
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/refint/AHTS.DAL.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.pdb
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/AHTS.DAL.genruntimeconfig.cache
+/Users/nawaf/RiderProjects/AHTS/AHTS.DAL/obj/Debug/net8.0/ref/AHTS.DAL.dll
