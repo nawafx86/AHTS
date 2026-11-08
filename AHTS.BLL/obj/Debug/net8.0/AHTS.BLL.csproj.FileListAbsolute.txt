@@ -15,3 +15,4 @@
 /Users/nawaf/RiderProjects/AHTS/AHTS.BLL/obj/Debug/net8.0/refint/AHTS.BLL.dll
 /Users/nawaf/RiderProjects/AHTS/AHTS.BLL/obj/Debug/net8.0/AHTS.BLL.pdb
 /Users/nawaf/RiderProjects/AHTS/AHTS.BLL/obj/Debug/net8.0/ref/AHTS.BLL.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.BLL/obj/Debug/net8.0/AHTS.BLL.sourcelink.json

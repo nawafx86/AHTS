@@ -9,3 +9,4 @@
 /Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/refint/AHTS.Core.dll
 /Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.pdb
 /Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/ref/AHTS.Core.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.Core/obj/Debug/net8.0/AHTS.Core.sourcelink.json

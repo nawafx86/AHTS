@@ -6,6 +6,7 @@ using AHTS.Core.Interfaces.DLL;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 using AHTS.Core.Interfaces.BLL;
+using AHTS.DAL.Repos.Asset;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,9 +21,11 @@ builder.Services.AddDbContext<AhtsContext>(options =>
 
 // Register Repositories
 builder.Services.AddScoped<IemployeeRepo, employeeRepo>();
+builder.Services.AddScoped<IAssetRepo, AssetRepo>();
 
 // Register Services
 builder.Services.AddScoped<IemployeeService, employeeService>();
+builder.Services.AddScoped<IAssetService, assetService>();
 
 var app = builder.Build();
 

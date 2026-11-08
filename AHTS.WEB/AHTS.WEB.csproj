@@ -23,8 +23,4 @@
       <ProjectReference Include="..\AHTS.Core\AHTS.Core.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="controllers\Asset\" />
-    </ItemGroup>
-
 </Project>

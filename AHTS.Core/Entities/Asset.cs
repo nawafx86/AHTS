@@ -1,3 +1,4 @@
+using AHTS.Core.Enums;
 
 namespace AHTS.Core.Entities;
 

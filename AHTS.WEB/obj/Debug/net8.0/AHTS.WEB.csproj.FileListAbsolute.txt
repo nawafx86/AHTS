@@ -146,3 +146,4 @@
 /Users/nawaf/RiderProjects/AHTS/AHTS.WEB/obj/Debug/net8.0/AHTS.WEB.pdb
 /Users/nawaf/RiderProjects/AHTS/AHTS.WEB/obj/Debug/net8.0/AHTS.WEB.genruntimeconfig.cache
 /Users/nawaf/RiderProjects/AHTS/AHTS.WEB/obj/Debug/net8.0/ref/AHTS.WEB.dll
+/Users/nawaf/RiderProjects/AHTS/AHTS.WEB/obj/Debug/net8.0/AHTS.WEB.sourcelink.json
