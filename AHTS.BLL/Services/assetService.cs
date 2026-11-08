@@ -53,24 +53,17 @@ public class assetService : IAssetService
 
     public async Task<bool> changeAssetEmployeeIDAndStatus(changeEmployeeIdAndStatus asset)
     {
-        if (!await isAssetExists(asset.AssetID)) return false;
-        
         switch (asset.Status)
         {
             
             case "Assigned":
             {
-                await changeAssetEmployeeID(new changeAssetEmployeeID
-                    { EmployeeID = asset.EmployeeID, AssetID = asset.AssetID });
-                await changeAssetStatus(new changeStatusDTO { AssetID = asset.AssetID, Status = asset.Status });
-                return true;
+               return await _assetRepo.changeStatusAndEmployeeId(asset);
             }
             case "Available":
             {
-                await changeAssetEmployeeID(new changeAssetEmployeeID
-                    { EmployeeID = null, AssetID = asset.AssetID });
-                await changeAssetStatus(new changeStatusDTO { AssetID = asset.AssetID, Status = asset.Status });
-                return true;
+                asset.EmployeeID = null;
+                return await _assetRepo.changeStatusAndEmployeeId(asset);
             }
                 default: return false;
 

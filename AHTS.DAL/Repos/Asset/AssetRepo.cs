@@ -63,6 +63,25 @@ public class AssetRepo : IAssetRepo
         
     }
 
+    async public Task<bool> changeStatusAndEmployeeId(changeEmployeeIdAndStatus asset)
+    {
+        if (!await isAssetExists(asset.AssetID)) return false;
+        try
+        {
+            int result = await _context.Assets.Where(e => e.AssetId == asset.AssetID)
+                .ExecuteUpdateAsync(s => s.SetProperty(u => u.Status, asset.Status)
+                    .SetProperty(u => u.AssignedToEmployeeId, asset.EmployeeID));
+            return result >= 1;
+
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+
+
+    }
     async public Task<int> changeAssetEmployeeID(changeAssetEmployeeID changeAssetEmployeeId)
     {
         try

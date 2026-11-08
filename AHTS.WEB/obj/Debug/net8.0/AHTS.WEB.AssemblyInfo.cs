@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AHTS.WEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf52bfa4a54ee8c0677b15c1af7c25fce2309208")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58ff8683f53382c2b49f619fe1a01cca1bb83499")]
 [assembly: System.Reflection.AssemblyProductAttribute("AHTS.WEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AHTS.WEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
