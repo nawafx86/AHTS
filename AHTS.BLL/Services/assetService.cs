@@ -53,10 +53,11 @@ public class assetService : IAssetService
 
     public async Task<bool> changeAssetEmployeeIDAndStatus(changeEmployeeIdAndStatus asset)
     {
+        if (!await _assetRepo.isAssetExists(asset.AssetID)) return false;
+        
         switch (asset.Status)
         {
-
-
+            
             case "Assigned":
             {
                 await changeAssetEmployeeID(new changeAssetEmployeeID

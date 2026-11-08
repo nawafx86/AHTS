@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AHTS.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4d4373b876d0c28525c46500fd06f5d8c1b0adb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf52bfa4a54ee8c0677b15c1af7c25fce2309208")]
 [assembly: System.Reflection.AssemblyProductAttribute("AHTS.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AHTS.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
