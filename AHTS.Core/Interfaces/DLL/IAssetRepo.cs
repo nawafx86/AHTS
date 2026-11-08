@@ -9,5 +9,6 @@ public interface IAssetRepo
 
      public Task<int> changeAssetEmployeeID(Core.DTOs.changeAssetEmployeeID changeAssetEmployeeId);
 
+     public Task<bool> isAssetExists(int AssetId);
 
 }

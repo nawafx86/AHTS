@@ -53,7 +53,7 @@ public class assetService : IAssetService
 
     public async Task<bool> changeAssetEmployeeIDAndStatus(changeEmployeeIdAndStatus asset)
     {
-        if (!await _assetRepo.isAssetExists(asset.AssetID)) return false;
+        if (!await isAssetExists(asset.AssetID)) return false;
         
         switch (asset.Status)
         {
@@ -77,5 +77,10 @@ public class assetService : IAssetService
         }
 
 
+    }
+
+    public async Task<bool> isAssetExists(int AssetId)
+    {
+        return await _assetRepo.isAssetExists(AssetId);
     }
 }

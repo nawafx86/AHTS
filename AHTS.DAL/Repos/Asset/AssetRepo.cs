@@ -76,4 +76,19 @@ public class AssetRepo : IAssetRepo
             throw;
         }
     }
+
+    async public Task<bool> isAssetExists(int AssetId)
+    {
+        try
+        {
+           bool AssetExists =  await _context.Assets.AnyAsync(e => e.AssetId == AssetId);
+           return AssetExists;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    
+    }
 }
