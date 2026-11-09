@@ -69,7 +69,7 @@ public class AssetController : ControllerBase
     
     [HttpGet("getAllStatusCount")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    async public Task<ActionResult<(int Assigned, int Available)>> getAllStatusCount()
+    async public Task<ActionResult<Dictionary<string, int>>> getAllStatusCount()
     {
         return Ok( await _assetService.getAllStatusCount());
     }
