@@ -76,4 +76,32 @@ public class assetService : IAssetService
     {
         return await _assetRepo.isAssetExists(AssetId);
     }
+
+   async public Task<List<AssetDTO>> getAllAssets(int pageNumber, int pageSize)
+   {
+       var assets =  await _assetRepo.getAllAssets(pageNumber, pageSize);
+       var assetsDTO = new List<AssetDTO>();
+            assets.ForEach(e => assetsDTO.Add(
+           new AssetDTO
+           {
+               AssetId = e.AssetId,
+               AssignedToEmployeeId = e.AssignedToEmployeeId,
+               Status = e.Status,
+               SerialNumber = e.SerialNumber,
+               DeviceType = e.DeviceType,
+
+           }));
+            return assetsDTO;
+   }
+
+   async public Task<(int assignedCount, int availableCount)> getAllStatusCount()
+   {
+       return await _assetRepo.getAllStatusCount();
+   }
+
+   async public Task<int> getAllAssetCount()
+   {
+       return await _assetRepo.getAllAssetCount();
+   }
+
 }
