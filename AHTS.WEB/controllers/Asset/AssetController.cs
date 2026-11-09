@@ -59,4 +59,26 @@ public class AssetController : ControllerBase
     {
         return Ok(await _assetService.changeAssetEmployeeIDAndStatus(changeAssetEmployeeIdAndStatus));
     }
+
+    [HttpGet("getAllAssetCount")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    async public Task<ActionResult<int>> getAllAssetCount()
+    {
+        return Ok( await _assetService.getAllAssetCount());
+    }
+    
+    [HttpGet("getAllStatusCount")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    async public Task<ActionResult<(int Assigned, int Available)>> getAllStatusCount()
+    {
+        return Ok( await _assetService.getAllStatusCount());
+    }
+    
+    [HttpGet("getAllAssets")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    async public Task<ActionResult<List<Core.DTOs.AssetDTO>>> getAllAssets([FromQuery]int pageNumber = 1, [FromQuery] int pageSize = 10)
+    {
+        return Ok( await _assetService.getAllAssets(pageNumber, pageSize));
+    }
+    
 }
