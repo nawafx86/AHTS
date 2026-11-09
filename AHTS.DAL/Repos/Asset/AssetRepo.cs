@@ -110,4 +110,59 @@ public class AssetRepo : IAssetRepo
         }
     
     }
+
+    async public Task<int> getAllAssetCount()
+    {
+        try
+        {
+            int count = await _context.Assets.CountAsync();
+            return count;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+    async public Task<(int assignedCount, int availableCount)> getAllStatusCount()
+    {
+        try
+        {
+            var countList = await _context.Assets.GroupBy(e => e.Status).Select(s =>
+                new
+                {
+                    status = s.Key,
+                    count = s.Count()
+                }).ToListAsync();
+            int assignedCount = countList.FirstOrDefault(s => s.status == "Assigned")?.count ?? 0;
+            int availableCount = countList.FirstOrDefault(s => s.status == "Available")?.count ?? 0;
+            return (assignedCount, availableCount);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+    async public Task<List<Core.Entities.Asset>> getAllAssets(int pageNumber = 1, int pageSize = 10)
+    {
+        try
+        {
+
+            var items = await _context.Assets
+                .OrderBy(e => e.AssetId)
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return items;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
 }
