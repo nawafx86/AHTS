@@ -15,7 +15,7 @@ public interface IAssetRepo
 
      public Task<int> getAllAssetCount();
 
-     public Task<(int assignedCount, int availableCount)> getAllStatusCount();
+     public Task<Dictionary<string, int>> getAllStatusCount();
 
      public Task<List<Entities.Asset>> getAllAssets(int pageNumber = 1, int pageSize = 10);
 

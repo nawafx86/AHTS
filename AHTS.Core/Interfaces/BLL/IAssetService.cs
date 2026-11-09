@@ -14,7 +14,7 @@ public interface IAssetService
     
     public Task<int> getAllAssetCount();
 
-    public Task<(int assignedCount, int availableCount)> getAllStatusCount();
+    public Task<Dictionary<string, int>> getAllStatusCount();
 
     public Task<List<DTOs.AssetDTO>> getAllAssets(int pageNumber, int pageSize);
 

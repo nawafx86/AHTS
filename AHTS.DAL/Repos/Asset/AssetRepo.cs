@@ -125,19 +125,13 @@ public class AssetRepo : IAssetRepo
         }
     }
 
-    async public Task<(int assignedCount, int availableCount)> getAllStatusCount()
+    async public Task<Dictionary<string, int>> getAllStatusCount()
     {
         try
         {
-            var countList = await _context.Assets.GroupBy(e => e.Status).Select(s =>
-                new
-                {
-                    status = s.Key,
-                    count = s.Count()
-                }).ToListAsync();
-            int assignedCount = countList.FirstOrDefault(s => s.status == "Assigned")?.count ?? 0;
-            int availableCount = countList.FirstOrDefault(s => s.status == "Available")?.count ?? 0;
-            return (assignedCount, availableCount);
+            return await _context.Assets
+                .GroupBy(e => e.Status)
+                .ToDictionaryAsync(s => s.Key, s => s.Count());
         }
         catch (Exception e)
         {

@@ -94,7 +94,7 @@ public class assetService : IAssetService
             return assetsDTO;
    }
 
-   async public Task<(int assignedCount, int availableCount)> getAllStatusCount()
+   async public Task<Dictionary<string, int>> getAllStatusCount()
    {
        return await _assetRepo.getAllStatusCount();
    }
