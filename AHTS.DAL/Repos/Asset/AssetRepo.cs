@@ -159,4 +159,19 @@ public class AssetRepo : IAssetRepo
             throw;
         }
     }
+
+    async public Task<List<string>> getAllDevices()
+    {
+        try
+        {
+            var Devices = await _context.Assets.Select(e => e.DeviceType).Distinct().ToListAsync();
+            return Devices;
+        }
+        catch (Exception a)
+        {
+            Console.WriteLine(a);
+            throw;
+        }
+        
+    }
 }

@@ -9,7 +9,15 @@ using AHTS.Core.Interfaces.BLL;
 using AHTS.DAL.Repos.Asset;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins("http://127.0.0.1:5500", "http://localhost:5500")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 // 1. Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -28,7 +36,7 @@ builder.Services.AddScoped<IemployeeService, employeeService>();
 builder.Services.AddScoped<IAssetService, assetService>();
 
 var app = builder.Build();
-
+app.UseCors("AllowFrontend");
 // 2. Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

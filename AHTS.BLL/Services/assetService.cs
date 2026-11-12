@@ -104,4 +104,9 @@ public class assetService : IAssetService
        return await _assetRepo.getAllAssetCount();
    }
 
+   async public Task<List<string>> getAllDevices()
+   {
+       return await _assetRepo.getAllDevices();
+   }
+
 }

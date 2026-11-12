@@ -19,4 +19,7 @@ public interface IAssetRepo
 
      public Task<List<Entities.Asset>> getAllAssets(int pageNumber = 1, int pageSize = 10);
 
+     public Task<List<string>> getAllDevices();
+
+
 }   

@@ -80,5 +80,12 @@ public class AssetController : ControllerBase
     {
         return Ok( await _assetService.getAllAssets(pageNumber, pageSize));
     }
+
+    [HttpGet("getAllDevices")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    async public Task<ActionResult<List<string>>> getAllDevices()
+    {
+        return Ok(await _assetService.getAllDevices());
+    }
     
 }
