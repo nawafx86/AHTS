@@ -23,4 +23,12 @@ public class employeeApiController : ControllerBase
         EmployeeDTO employeeDto = await _iemployeeService.getEmployee(id);
         return Ok(employeeDto);
     }
+    
+    [HttpGet("getAllEmployeesNameAndID")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    async public Task<ActionResult<Dictionary<int,string>>> getAllEmployeesNameAndID()
+    {
+        var employees = await _iemployeeService.getAllEmployeeNamesAndID();
+        return Ok(employees);
+    }
 }

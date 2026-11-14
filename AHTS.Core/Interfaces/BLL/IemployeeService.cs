@@ -5,4 +5,6 @@ public interface IemployeeService
 {
     public Task<EmployeeDTO> getEmployee(int id);
 
+    public Task<Dictionary<int, string>> getAllEmployeeNamesAndID();
+
 }

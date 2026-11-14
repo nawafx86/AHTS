@@ -30,4 +30,9 @@ public class employeeService : IemployeeService
 
         return new EmployeeDTO { EmployeeId = -1};
     }
+
+    public async Task<Dictionary<int, string>> getAllEmployeeNamesAndID()
+    {
+        return await _iemployeeRepo.getAllEmployeeNamesAndID();
+    }
 }

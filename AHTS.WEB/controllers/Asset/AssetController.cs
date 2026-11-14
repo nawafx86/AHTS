@@ -22,9 +22,9 @@ public class AssetController : ControllerBase
         return Ok(assetDTOs);
     }
 
-    [HttpPost]
+    [HttpPost("addAsset")]
     [ProducesResponseType(StatusCodes.Status201Created)]
-    async public Task<ActionResult> addAsset([FromQuery] Core.DTOs.AddNewAssetDTO assetDto)
+    async public Task<ActionResult> addAsset([FromBody] Core.DTOs.AddNewAssetDTO assetDto)
     {
          int AssetID = await _assetService.addAsset(assetDto);
          return CreatedAtRoute(
