@@ -55,7 +55,7 @@ public class AssetController : ControllerBase
 
     [HttpPatch("changeEmployeeIdAndStatus")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    async public Task<ActionResult<int>> changeEmployeeIdAndStatus([FromQuery] Core.DTOs.changeEmployeeIdAndStatus changeAssetEmployeeIdAndStatus)
+    async public Task<ActionResult<int>> changeEmployeeIdAndStatus([FromBody] Core.DTOs.changeEmployeeIdAndStatus changeAssetEmployeeIdAndStatus)
     {
         return Ok(await _assetService.changeAssetEmployeeIDAndStatus(changeAssetEmployeeIdAndStatus));
     }

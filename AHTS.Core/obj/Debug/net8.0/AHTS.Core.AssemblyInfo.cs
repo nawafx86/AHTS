@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AHTS.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff445a450ec3516f53470ab11bbb096e9ef7c400")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbd38fb27c63edd2aec6e4d4a3ad752b769c6701")]
 [assembly: System.Reflection.AssemblyProductAttribute("AHTS.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AHTS.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
