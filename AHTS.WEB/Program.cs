@@ -36,6 +36,8 @@ builder.Services.AddScoped<IemployeeService, employeeService>();
 builder.Services.AddScoped<IAssetService, assetService>();
 
 var app = builder.Build();
+app.UseStaticFiles();
+
 app.UseCors("AllowFrontend");
 // 2. Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
