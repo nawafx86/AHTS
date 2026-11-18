@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AHTS.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <header class="head">
+        <h1>AHTS</h1>
+        <p id="summary-content" class="summary-text">This Project Lets you add or update a device to a certian Employee</p>
+        <div>
+            <div id="AllAssitsCountBill" class="bills"><p>All Assets</p><span id="AllAssetsCountNum" class="billSpan"></span></div>
+            <div id="AssignedStatusBill" class="bills"><p>Assigned</p><span id="AssignStatusNum" class="billSpan"></span></div>
+            <div id="AvailableStatusBill" class="bills"><p>Available</p><span id="AvailabeStatusNum" class="billSpan"></span></div>
+        </div>           
+    </header>
+
+    <main class="main">
+        <div class="article">
+            <button id="btn-add" class="buttons">Add New Device</button>
+        </div>
+
+        <div class="table-and-page-container">
+            <div class="table-devices-container">
+            <table id="devices-table" class="devices-table">
+                <thead>
+                    <tr>
+                        <th>Asset ID</th>
+                        <th>Serial Number</th>
+                        <th>Device Type</th>
+                        <th>Status</th>
+                        <th>Employee ID</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">      
+                </tbody>
+            </table>
+            </div>
+            <div class="divTablePage">
+                <button id="btnPagePrev"><</button>
+                Page: <span id="spnPage">1</span>
+                <button id="btnPageNext">></button>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="AddAssetDialog" class="DialogClass">
+        <h2 id="AddDialogTitle">Add Asset</h2>
+        <form id="frmDialog">
+        <div class="formClass" >
+            <label for="serial-number">Add A Serial Number:</label>
+            <input type="text" id="serial-number" required placeholder="Serial Number">
+            <label for="devices-types">Choose a Device:</label>
+            <select id="devices-types" name="device">
+            </select>
+
+             <label for="employees-select">Choose an Employee To Assign Device To:</label>
+            <select id="employees-select" name="employee">
+            </select>
+        </div>
+            <button id="frmBtnCancel" class="formButtons" value="cancel">Cancel</button>
+            <button id="frmBtnConfirm" class="formButtons" type="submit" value="confirm">Confirm</button>
+        </form>
+    </dialog>
+
+     <dialog id="UpdateAssetDialog" class="DialogClass">
+        <h2 id="UpdateDialogTitle">Update Asset</h2>
+        <form id="frmDialogUpdate">
+        <div class="formClass" >
+            <label for="isNull">Set As Available:</label>
+            <input type="checkbox" id="isNull" value="0">
+          
+             <label for="updateDialog-employees-select">Choose an Employee To Assign Device To:</label>
+            <select id="updateDialog-employees-select" name="UpdateDialogEmployee">
+            </select>
+        </div>
+            <button id="frmUpdateBtnCancel" class="formButtons" value="cancel">Cancel</button>
+            <button id="frmUpdateBtnConfirm" class="formButtons" type="submit" value="confirm">Confirm</button>
+        </form>
+    </dialog>
+</body>
+<script src="AHTS.js"></script>
+</html>

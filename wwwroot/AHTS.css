@@ -1,0 +1,325 @@
+
+*
+{
+  box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(45deg, rgb(9, 8, 71), rgb(19, 3, 3));
+    color: white;
+    height: 100vh;
+    margin: 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.DialogClass
+{
+   background-color: rgba(238, 232, 232, 0.796);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    border: none;
+    border-radius: 10px;
+}
+
+.buttons
+{
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    font-size: 1rem;
+
+    background-color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: 0.5s;
+    
+}
+
+.buttons:hover
+{
+  box-shadow: rgb(249, 247, 247) 0 0 20px;
+}
+
+
+.article
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(126, 123, 123, 0.102);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.table-devices-container {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+
+}
+.devices-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Ensures border-radius applies nicely to headers */
+  margin: 0;
+}
+
+/* Header styling */
+.devices-table thead tr {
+  background-color: #f8fafc;
+  border-bottom: 2px solid #e2e8f0;
+  text-align: left;
+}
+
+.devices-table th,
+.devices-table td {
+  padding: 12px 16px;
+}
+
+/* Ensure header cells keep their semantic header look */
+.devices-table thead th {
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* Body row styling & alternating background */
+.devices-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.devices-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.devices-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* Hover effect for rows */
+.devices-table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Note: While your HTML currently uses <th> tags inside <tbody>, 
+   the rule below ensures they act like standard cells visually if needed. */
+.devices-table tbody th {
+  font-weight: 500;
+  color: #1e293b;
+  text-align: left;
+}
+.head
+{
+  width: 80vw;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+
+    gap: 1px;
+}
+
+.head p
+{
+  margin-top: 0;
+  color: #ffffff69;
+  font-size: small;
+}
+.head h1
+{
+  margin: 0;
+}
+
+.bills
+{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Let padding control the size naturally instead of hardcoding max-height/max-width */
+  padding: 1px 3px;
+  min-width: 70px;
+  border-radius: 50px;
+
+  /* Glassmorphism background */
+  background-color: rgba(244, 244, 248, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bills p
+{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: rgba(240, 242, 245, 0.553);
+  margin: 0;
+  line-height: 1.2;
+}
+
+ .billSpan
+{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  
+  /* Solid warm gold with modern rendering enhancements */
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  
+  margin-top: 2px; /* Small clean gap between the p tag and the span */
+}
+
+.statusAvailable
+{
+ display: inline-flex;
+  /* Change to row so the dot sits side-by-side with your text */
+  flex-direction: row; 
+  align-items: center;
+  gap: 5px; /* Space between the dot and the text */
+
+  border-radius: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 11px; /* Added a clean font size */
+
+  background-color: rgba(6, 245, 26, 0.247);
+  border: 1px dashed rgba(12, 11, 11, 0.5);
+}
+
+.statusAvailable::before
+{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #068432f0; /* Brighter, shinier core */
+  border-radius: 50%;
+
+  box-shadow: 0 0 6px rgba(2, 122, 34, 0.9), 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.statusAssigned
+{
+ display: inline-flex;
+  /* Change to row so the dot sits side-by-side with your text */
+  flex-direction: row; 
+  align-items: center;
+  gap: 5px; /* Space between the dot and the text */
+
+  border-radius: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 11px; /* Added a clean font size */
+
+  background-color: rgba(245, 245, 6, 0.354);
+  border: 1px dashed rgba(12, 11, 11, 0.5);
+}
+
+.statusAssigned::before
+{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #bc4141; /* Brighter, shinier core */
+  border-radius: 50%;
+
+  box-shadow: 0 0 6px rgb(169, 50, 50), 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.formButtons
+{
+  display: inline;
+}
+
+.formClass
+{
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  padding: 10px;
+  gap: 20px;
+
+  border-radius: 10px 1px solid;
+}
+
+.formButtons
+{
+  margin-top: 5px;
+  padding:10px;
+}
+.divTablePage
+{
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  background-color: rgba(121, 121, 129, 0.328);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 550;
+}
+
+.table-and-page-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  
